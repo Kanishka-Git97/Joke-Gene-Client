@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://cdn.wallpapersafari.com/77/77/RTr1Sj.png');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+		-webkit-transform: translatey(-30px);
+		-moz-transform: translatey(-30px);
+		-ms-transform: translatey(-30px);
+		-o-transform: translatey(-30px);
+}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.bg-img{
+  animation: float 6s ease-in-out infinite;
 }
