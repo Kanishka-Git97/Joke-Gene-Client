@@ -15,7 +15,7 @@ function Home() {
   const [jokeForm, setJokeForm] = useState(null);
 
   const fetchAvailableTypes = async ()=>{
-    await fetch('http://localhost:4040/types').then(response=>response.json()).then(data=>{
+    await fetch('https://joke-service.onrender.com/types').then(response=>response.json()).then(data=>{
     let temp = [];
     data.map((item) => {
       temp.push({value: item._id, label: item.type});
@@ -26,7 +26,7 @@ function Home() {
 
   // Handle Generate button
   const handleGenerate = async ()=>{
-    await fetch('http://localhost:4040/random', {
+    await fetch('https://joke-service.onrender.com/random', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ function Home() {
 
   // Handle Submitted Joke
   const handleJoke = async ()=>{
-    await fetch('http://localhost:4040/jokes', {
+    await fetch('https://joke-service.onrender.com/jokes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
