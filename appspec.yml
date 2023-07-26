@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/buyasia/buy-asia
+    destination: /home/ec2-user/development/Joke-Gene-Client
 hooks:
 #  ApplicationStop:
 #  DownloadBundle:
