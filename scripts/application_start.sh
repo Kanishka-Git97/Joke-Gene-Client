@@ -4,6 +4,7 @@ BUILD_DESTINATION="/home/ec2-user/production/client"
 
 echo 'run application_start.sh: ' >> /home/ec2-user/development/Joke-Gene-Client/deploy.log
 echo 'Building the application...'
+cd /home/ec2-user/development/Joke-Gene-Client
 npm run build >> /home/ec2-user/development/Joke-Gene-Client/deploy.log
 BUILD_FOLDER="/home/ec2-user/development/Joke-Gene-Client/build"
 if[-d "$BUILD_FOLDER"]; then
