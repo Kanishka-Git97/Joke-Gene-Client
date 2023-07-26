@@ -7,5 +7,4 @@ cd /home/ec2-user/development/Joke-Gene-Client/ >> /home/ec2-user/development/Jo
 echo 'npm install' >> /home/ec2-user/development/Joke-Gene-Client/deploy.log
 npm i --legacy-peer-deps >> /home/ec2-user/development/Joke-Gene-Client/deploy.log
 
-echo 'Building the application...'
-npm run build >> /home/ec2-user/development/Joke-Gene-Client/deploy.log
+
